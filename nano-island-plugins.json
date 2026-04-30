@@ -1,0 +1,50 @@
+[
+    {
+        "id": "app-start",
+        "name": "应用快捷启动",
+        "author": "小莫唐尼",
+        "description": "快速启动应用程序的插件",
+        "isOfficial": true,
+        "isReleased": false
+    },
+    {
+        "id": "weather",
+        "name": "天气插件",
+        "author": "小莫唐尼",
+        "description": "显示天气信息的插件",
+        "isOfficial": true,
+        "isReleased": false
+    },
+    {
+        "id": "clock",
+        "name": "时钟插件",
+        "author": "小莫唐尼",
+        "description": "显示当前时间的插件",
+        "isOfficial": true,
+        "isReleased": false
+    },
+    {
+        "id": "calendar",
+        "name": "日历插件",
+        "author": "小莫唐尼",
+        "description": "显示日历信息的插件",
+        "isOfficial": true,
+        "isReleased": false
+    },
+    {
+        "id": "notes",
+        "name": "便签插件",
+        "author": "小莫唐尼",
+        "description": "记录便签信息的插件",
+        "isOfficial": true,
+        "isReleased": false
+    },
+    {
+        "id": "todo",
+        "name": "待办事项插件",
+        "author": "小莫唐尼",
+        "description": "管理待办事项的插件",
+        "isOfficial": true,
+        "isReleased": false
+    }
+]
