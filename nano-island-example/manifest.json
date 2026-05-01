@@ -1,0 +1,53 @@
+{
+  "id": "nano-island-example",
+  "name": "示例时钟插件",
+  "version": "1.0.0",
+  "description": "一个完整的示例插件，展示所有组件类型和 TailwindCSS 支持",
+  "author": "Nano Island Team",
+  "icon": "🕐",
+  "screenshots": [
+    "screenshots/1-regular.png",
+    "screenshots/2-expanded.png",
+    "screenshots/3-resident.png",
+    "screenshots/4-settings.png"
+  ],
+  "isReleased": true,
+  "isOfficial": true,
+  "permissions": [
+    "storage:read",
+    "storage:write"
+  ],
+  "entry": {
+    "main": "main"
+  },
+  "interfaces": {
+    "regular": {
+      "entry": "regular",
+      "defaultProps": {
+        "theme": "dark"
+      }
+    },
+    "expanded": {
+      "entry": "expanded",
+      "width": 400,
+      "height": 500
+    },
+    "resident": {
+      "entry": "resident",
+      "colspan": 2,
+      "rowspan": 1
+    },
+    "settings": {
+      "entry": "settings",
+      "title": "时钟设置"
+    },
+    "menu": [
+      {
+        "id": "timezone",
+        "label": "时区设置",
+        "icon": "🌍",
+        "entry": "menu"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "nano-island-plugin-clock",
+  "name": "时钟",
+  "version": "1.0.0",
+  "description": "实时显示当前时间，支持数字和指针两种样式",
+  "author": "小莫唐尼",
+  "icon": "🕐",
+  "isReleased": true,
+  "isOfficial": true,
+  "permissions": [
+    "storage:read",
+    "storage:write",
+    "shared:read",
+    "shared:write",
+    "private:read",
+    "private:write"
+  ],
+  "sharedData": {
+    "provides": [
+      "current-time"
+    ],
+    "consumes": []
+  },
+  "interfaces": {
+    "main": {
+      "type": "vue",
+      "entry": "main.js"
+    },
+    "regular": {
+      "type": "vue",
+      "entry": "regular.js",
+      "defaultSize": {
+        "width": 120,
+        "height": 36
+      }
+    },
+    "expanded": {
+      "type": "vue",
+      "entry": "expanded.js",
+      "defaultSize": {
+        "width": 400,
+        "height": 300
+      }
+    },
+    "card": {
+      "type": "vue",
+      "entry": "card.js",
+      "gridSize": {
+        "w": 2,
+        "h": 1
+      }
+    },
+    "settings": {
+      "type": "vue",
+      "entry": "settings.js",
+      "title": "时钟设置"
+    },
+    "menu": [
+      {
+        "id": "main",
+        "label": "时钟",
+        "icon": "🕐"
+      }
+    ]
+  }
+}

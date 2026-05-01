@@ -1,0 +1,41 @@
+{
+  "id": "nano-island-plugin-notes",
+  "name": "便签插件",
+  "version": "1.0.0",
+  "description": "一个简单的便签管理插件",
+  "author": "Nano Island Team",
+  "icon": "📝",
+  "isReleased": true,
+  "isOfficial": true,
+  "permissions": ["storage:read", "storage:write"],
+  "entry": {
+    "main": "main.js"
+  },
+  "interfaces": {
+    "regular": {
+      "defaultProps": { "count": 0 }
+    },
+    "expanded": {
+      "width": 400,
+      "height": 500
+    },
+    "resident": {
+      "colspan": 2
+    },
+    "settings": {
+      "title": "便签设置"
+    },
+    "menu": [
+      {
+        "id": "menu1",
+        "label": "菜单1",
+        "icon": "mdi:folder"
+      },
+      {
+        "id": "menu2",
+        "label": "菜单2",
+        "icon": "mdi:file"
+      }
+    ]
+  }
+}
