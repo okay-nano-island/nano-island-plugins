@@ -1,5 +1,5 @@
 {
-  "id": "nano-island-example",
+  "id": "nano-island-plugin-example",
   "name": "示例时钟插件",
   "version": "1.0.0",
   "description": "一个完整的示例插件，展示所有组件类型和 TailwindCSS 支持",

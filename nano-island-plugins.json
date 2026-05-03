@@ -1,6 +1,6 @@
 [
   {
-    "id": "nano-island-example",
+    "id": "nano-island-plugin-example",
     "name": "示例时钟插件",
     "version": "1.0.0",
     "description": "一个完整的示例插件，展示所有组件类型和 TailwindCSS 支持",
@@ -16,22 +16,11 @@
     "isOfficial": true
   },
   {
-    "id": "nano-island-plugin-clock",
-    "name": "时钟",
-    "version": "1.0.0",
-    "description": "实时显示当前时间，支持数字和指针两种样式",
-    "author": "小莫唐尼",
-    "icon": "🕐",
-    "screenshots": [],
-    "isReleased": false,
-    "isOfficial": true
-  },
-  {
     "id": "nano-island-plugin-notes",
     "name": "便签插件",
     "version": "1.0.0",
     "description": "一个简单的便签管理插件",
-    "author": "Nano Island Team",
+    "author": "小莫唐尼",
     "icon": "📝",
     "screenshots": [],
     "isReleased": true,
