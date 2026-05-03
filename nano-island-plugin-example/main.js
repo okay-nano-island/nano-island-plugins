@@ -26,15 +26,18 @@ function defineIslandPlugin(factory) {
 	else console.warn("[Nano Island] 插件未在加载流程中调用");
 }
 /**
-* 包装 Vue 组件为 Custom Element 构造函数
-* @param component Vue 组件
-* @param tagName 标签名（可选，如果提供则自动注册）
-* @returns Custom Element 构造函数
+* 包装 Vue 组件为 Custom Element 配置对象
+* @param options 配置选项，包含组件和样式信息
+* @returns 配置对象，包含 component、tagName、styles、styleFiles
 */
-function defineIslandCustomElement(component, tagName) {
-	component.__isCustomElement = true;
-	if (tagName && typeof window !== "undefined" && !customElements.get(tagName)) {}
-	return component;
+function defineIslandCustomElement(options) {
+	options.component.__isCustomElement = true;
+	return {
+		component: options.component,
+		tagName: options.tagName,
+		styles: options.styles,
+		styleFiles: options.styleFiles
+	};
 }
 //#endregion
 //#region ../../node_modules/.pnpm/@vue+shared@3.5.33/node_modules/@vue/shared/dist/shared.esm-bundler.js
@@ -120831,21 +120834,27 @@ var main_default = defineIslandPlugin((ctx) => {
 	});
 	const allPlugins = ctx.getAllPlugins();
 	console.log("[Example Plugin] 所有插件:", allPlugins);
-	ctx.registerRegular({ component: defineIslandCustomElement(Regular_ce_default) });
-	ctx.registerExpanded({ component: defineIslandCustomElement(Expanded_ce_default) });
+	ctx.registerRegular({ component: defineIslandCustomElement({ component: Regular_ce_default }) });
+	ctx.registerExpanded({ component: defineIslandCustomElement({
+		component: Expanded_ce_default,
+		styleFiles: ["custom.css", "https://example.com/styles.css"]
+	}) });
 	ctx.registerResident({
-		component: defineIslandCustomElement(Resident_ce_default),
+		component: defineIslandCustomElement({ component: Resident_ce_default }),
 		colspan: 2,
 		rowspan: 1
 	});
-	ctx.registerSettings({ component: defineIslandCustomElement(Settings_ce_default) });
+	ctx.registerSettings({ component: defineIslandCustomElement({
+		component: Settings_ce_default,
+		styles: `.custom-class { color: red; }`
+	}) });
 	ctx.registerMenu("timezone", {
-		component: defineIslandCustomElement(Menu_ce_default),
+		component: defineIslandCustomElement({ component: Menu_ce_default }),
 		label: "时区设置",
 		icon: "🌍"
 	});
 	ctx.registerMenu("display", {
-		component: defineIslandCustomElement(DisplaySettings_ce_default),
+		component: defineIslandCustomElement({ component: DisplaySettings_ce_default }),
 		label: "显示设置",
 		icon: "⚙️"
 	});
