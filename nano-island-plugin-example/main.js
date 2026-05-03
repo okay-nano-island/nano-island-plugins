@@ -120837,7 +120837,7 @@ var main_default = defineIslandPlugin((ctx) => {
 	ctx.registerRegular({ component: defineIslandCustomElement({ component: Regular_ce_default }) });
 	ctx.registerExpanded({ component: defineIslandCustomElement({
 		component: Expanded_ce_default,
-		styleFiles: ["custom.css", "https://example.com/styles.css"]
+		styleFiles: []
 	}) });
 	ctx.registerResident({
 		component: defineIslandCustomElement({ component: Resident_ce_default }),
