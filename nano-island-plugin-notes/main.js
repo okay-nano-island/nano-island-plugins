@@ -1,50 +1,17 @@
-//#endregion
-//#region ../../node_modules/.pnpm/@nano-island+sdk@1.0.3_typescript@6.0.3/node_modules/@nano-island/sdk/dist/index.js
+//#region ../../packages/sdk/dist/plugin-def.js
 /**
-* @nano-island/sdk — 灵动岛插件 SDK
-*
-* 为插件开发者提供访问宿主能力的统一入口，包含：
-* - {@link defineIslandPlugin} — 插件定义工厂函数
-* - {@link useUI} — UI 控制钩子（显示/隐藏灵动岛面板）
-* - {@link useStorage} — 插件私有存储钩子
-* - {@link useEvents} — 事件总线钩子
-* - {@link useSharedData} — 跨插件共享数据钩子
-*
-* @example
-* ```ts
-* import { defineIslandPlugin, useUI, useStorage } from '@nano-island/sdk'
-*
-* export default defineIslandPlugin((ctx) => {
-*   const ui = useUI(ctx.pluginId)
-*   const storage = useStorage(ctx.pluginId)
-*
-*   ctx.onEnable = async () => {
-*     const saved = await storage.get('config')
-*     await ui.requestRegularShow({ strategy: 'immediate' })
-*   }
-* })
-* ```
-*/
-/**
-* 定义一个灵动岛插件。
-*
-* 这是插件的标准入口写法，宿主会在合适的时机调用 factory，
-* 并传入包含 UI、存储、事件、共享数据等能力的上下文对象。
-*
-* @param factory - 插件初始化函数，接受 ctx 上下文对象
-* @returns 包装后的插件函数
-*
-* @example
-* ```ts
-* export default defineIslandPlugin((ctx) => {
-*   ctx.onEnable = () => {
-*     ctx.ui.requestRegularShow({ strategy: 'immediate' })
-*   }
-* })
-* ```
+* 插件入口函数
+* 由宿主环境调用，实际逻辑在 PluginLoader 中实现
 */
 function defineIslandPlugin(factory) {
-	return factory;
+	if (typeof window === "undefined") return;
+	const host = window._ISLAND_HOST_;
+	if (!host) {
+		console.error("[Nano Island] 宿主环境未初始化");
+		return;
+	}
+	if (host._currentPlugin && host._env) host._currentPlugin.factory = factory;
+	else console.warn("[Nano Island] 插件未在加载流程中调用");
 }
 //#endregion
 //#region ../../node_modules/.pnpm/@vue+shared@3.5.33/node_modules/@vue/shared/dist/shared.esm-bundler.js
