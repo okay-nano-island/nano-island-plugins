@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 function defineIslandPlugin(factory) {
   if (typeof window === "undefined")
     return;
@@ -13032,10 +13033,10 @@ const compile = () => {
     );
   }
 };
-const _hoisted_1$4 = { class: "w-full h-full flex flex-col items-center justify-center text-white bg-gradient-to-br from-purple-500 to-pink-500 rounded-full" };
-const _hoisted_2$4 = { class: "text-2xl font-bold" };
-const _hoisted_3$4 = { class: "text-xs opacity-80" };
-const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$5 = { class: "w-full h-full flex flex-col items-center justify-center text-white bg-gradient-to-br from-purple-500 to-pink-500 rounded-full" };
+const _hoisted_2$5 = { class: "text-2xl font-bold" };
+const _hoisted_3$5 = { class: "text-xs opacity-80" };
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "Regular.ce",
   setup(__props) {
     const time = /* @__PURE__ */ ref("");
@@ -13057,19 +13058,19 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
       return () => clearInterval(interval);
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$4, [
-        createBaseVNode("div", _hoisted_2$4, toDisplayString(time.value), 1),
-        createBaseVNode("div", _hoisted_3$4, toDisplayString(date.value), 1)
+      return openBlock(), createElementBlock("div", _hoisted_1$5, [
+        createBaseVNode("div", _hoisted_2$5, toDisplayString(time.value), 1),
+        createBaseVNode("div", _hoisted_3$5, toDisplayString(date.value), 1)
       ]);
     };
   }
 });
-const _hoisted_1$3 = { class: "w-full h-full flex flex-col bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-6 text-white" };
-const _hoisted_2$3 = { class: "flex-1 flex flex-col items-center justify-center" };
-const _hoisted_3$3 = { class: "text-6xl font-bold tracking-wider" };
-const _hoisted_4$3 = { class: "text-xl mt-2 opacity-90" };
-const _hoisted_5$2 = { class: "text-sm mt-1 opacity-70" };
-const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$4 = { class: "w-full h-full flex flex-col bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-6 text-white" };
+const _hoisted_2$4 = { class: "flex-1 flex flex-col items-center justify-center" };
+const _hoisted_3$4 = { class: "text-6xl font-bold tracking-wider" };
+const _hoisted_4$4 = { class: "text-xl mt-2 opacity-90" };
+const _hoisted_5$3 = { class: "text-sm mt-1 opacity-70" };
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "Expanded.ce",
   setup(__props) {
     const time = /* @__PURE__ */ ref("");
@@ -13094,11 +13095,11 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
       return () => clearInterval(interval);
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$3, [
-        createBaseVNode("div", _hoisted_2$3, [
-          createBaseVNode("div", _hoisted_3$3, toDisplayString(time.value), 1),
-          createBaseVNode("div", _hoisted_4$3, toDisplayString(date.value), 1),
-          createBaseVNode("div", _hoisted_5$2, toDisplayString(timezone.value), 1)
+      return openBlock(), createElementBlock("div", _hoisted_1$4, [
+        createBaseVNode("div", _hoisted_2$4, [
+          createBaseVNode("div", _hoisted_3$4, toDisplayString(time.value), 1),
+          createBaseVNode("div", _hoisted_4$4, toDisplayString(date.value), 1),
+          createBaseVNode("div", _hoisted_5$3, toDisplayString(timezone.value), 1)
         ]),
         _cache[0] || (_cache[0] = createBaseVNode("div", { class: "flex justify-between items-center text-sm opacity-80" }, [
           createBaseVNode("div", null, "🕐 实时时钟"),
@@ -13108,11 +13109,11 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _hoisted_1$2 = { class: "w-full h-full flex flex-col bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-4 text-white" };
-const _hoisted_2$2 = { class: "mb-3" };
-const _hoisted_3$2 = { class: "text-2xl font-bold" };
-const _hoisted_4$2 = { class: "text-sm opacity-80 mt-1" };
-const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$3 = { class: "w-full h-full flex flex-col bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-4 text-white" };
+const _hoisted_2$3 = { class: "mb-3" };
+const _hoisted_3$3 = { class: "text-2xl font-bold" };
+const _hoisted_4$3 = { class: "text-sm opacity-80 mt-1" };
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "Resident.ce",
   setup(__props) {
     const time = /* @__PURE__ */ ref("");
@@ -13144,10 +13145,10 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       return () => clearInterval(interval);
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$2, [
-        createBaseVNode("div", _hoisted_2$2, [
-          createBaseVNode("div", _hoisted_3$2, toDisplayString(greeting.value), 1),
-          createBaseVNode("div", _hoisted_4$2, toDisplayString(time.value), 1)
+      return openBlock(), createElementBlock("div", _hoisted_1$3, [
+        createBaseVNode("div", _hoisted_2$3, [
+          createBaseVNode("div", _hoisted_3$3, toDisplayString(greeting.value), 1),
+          createBaseVNode("div", _hoisted_4$3, toDisplayString(time.value), 1)
         ]),
         _cache[0] || (_cache[0] = createBaseVNode("div", { class: "flex-1 flex items-center justify-center" }, [
           createBaseVNode("div", { class: "text-6xl" }, "🕐")
@@ -13160,15 +13161,15 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _hoisted_1$1 = { class: "w-full h-full flex flex-col bg-white dark:bg-gray-900 rounded-lg overflow-hidden" };
-const _hoisted_2$1 = { class: "flex-1 p-6 overflow-y-auto" };
-const _hoisted_3$1 = { class: "mb-6" };
-const _hoisted_4$1 = { class: "flex gap-3" };
-const _hoisted_5$1 = { class: "mb-6" };
-const _hoisted_6$1 = { class: "flex gap-3" };
-const _hoisted_7$1 = { class: "mb-6" };
-const _hoisted_8$1 = { class: "flex items-center justify-between cursor-pointer" };
-const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$2 = { class: "w-full h-full flex flex-col bg-white dark:bg-gray-900 rounded-lg overflow-hidden" };
+const _hoisted_2$2 = { class: "flex-1 p-6 overflow-y-auto" };
+const _hoisted_3$2 = { class: "mb-6" };
+const _hoisted_4$2 = { class: "flex gap-3" };
+const _hoisted_5$2 = { class: "mb-6" };
+const _hoisted_6$2 = { class: "flex gap-3" };
+const _hoisted_7$2 = { class: "mb-6" };
+const _hoisted_8$2 = { class: "flex items-center justify-between cursor-pointer" };
+const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "Settings.ce",
   props: {
     defaultProps: { type: Object }
@@ -13196,7 +13197,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       showSeconds.value = true;
     }
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$1, [
+      return openBlock(), createElementBlock("div", _hoisted_1$2, [
         createBaseVNode("div", { class: "flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-gray-700" }, [
           _cache[6] || (_cache[6] = createBaseVNode("h2", { class: "text-xl font-bold text-gray-900 dark:text-white" }, "⚙️ 时钟设置", -1)),
           createBaseVNode("button", {
@@ -13204,10 +13205,10 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             class: "px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors"
           }, " 保存 ")
         ]),
-        createBaseVNode("div", _hoisted_2$1, [
-          createBaseVNode("div", _hoisted_3$1, [
+        createBaseVNode("div", _hoisted_2$2, [
+          createBaseVNode("div", _hoisted_3$2, [
             _cache[10] || (_cache[10] = createBaseVNode("h3", { class: "text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3" }, "主题", -1)),
-            createBaseVNode("div", _hoisted_4$1, [
+            createBaseVNode("div", _hoisted_4$2, [
               createBaseVNode("button", {
                 onClick: _cache[0] || (_cache[0] = ($event) => theme.value = "light"),
                 class: normalizeClass(["flex-1 py-3 px-4 rounded-lg border-2 transition-all", theme.value === "light" ? "border-purple-500 bg-purple-50 dark:bg-purple-900/20" : "border-gray-200 dark:border-gray-700 hover:border-gray-300"])
@@ -13231,9 +13232,9 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               ])], 2)
             ])
           ]),
-          createBaseVNode("div", _hoisted_5$1, [
+          createBaseVNode("div", _hoisted_5$2, [
             _cache[13] || (_cache[13] = createBaseVNode("h3", { class: "text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3" }, "时间格式", -1)),
-            createBaseVNode("div", _hoisted_6$1, [
+            createBaseVNode("div", _hoisted_6$2, [
               createBaseVNode("button", {
                 onClick: _cache[3] || (_cache[3] = ($event) => format.value = "12h"),
                 class: normalizeClass(["flex-1 py-3 px-4 rounded-lg border-2 transition-all", format.value === "12h" ? "border-purple-500 bg-purple-50 dark:bg-purple-900/20" : "border-gray-200 dark:border-gray-700 hover:border-gray-300"])
@@ -13250,9 +13251,9 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               ])], 2)
             ])
           ]),
-          createBaseVNode("div", _hoisted_7$1, [
+          createBaseVNode("div", _hoisted_7$2, [
             _cache[15] || (_cache[15] = createBaseVNode("h3", { class: "text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3" }, "显示秒数", -1)),
-            createBaseVNode("label", _hoisted_8$1, [
+            createBaseVNode("label", _hoisted_8$2, [
               _cache[14] || (_cache[14] = createBaseVNode("span", { class: "text-gray-600 dark:text-gray-400" }, "在时钟上显示秒数", -1)),
               createBaseVNode("div", {
                 onClick: _cache[5] || (_cache[5] = ($event) => showSeconds.value = !showSeconds.value),
@@ -13279,56 +13280,285 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _hoisted_1 = { class: "w-full h-full flex flex-col bg-white dark:bg-gray-800 rounded-lg overflow-hidden" };
-const _hoisted_2 = { class: "flex-1 overflow-y-auto" };
-const _hoisted_3 = ["onClick"];
-const _hoisted_4 = { class: "text-2xl" };
-const _hoisted_5 = { class: "flex-1" };
-const _hoisted_6 = { class: "font-medium text-gray-900 dark:text-white" };
-const _hoisted_7 = { class: "text-xs text-gray-500 dark:text-gray-400 font-mono" };
-const _hoisted_8 = {
+const _hoisted_1$1 = { class: "w-full h-full flex flex-col bg-white dark:bg-gray-800 rounded-lg overflow-hidden" };
+const _hoisted_2$1 = { class: "px-4 py-2 border-b border-gray-200 dark:border-gray-700" };
+const _hoisted_3$1 = { class: "relative" };
+const _hoisted_4$1 = ["value"];
+const _hoisted_5$1 = { class: "flex-1 overflow-y-auto" };
+const _hoisted_6$1 = ["onClick"];
+const _hoisted_7$1 = { class: "text-2xl" };
+const _hoisted_8$1 = { class: "flex-1" };
+const _hoisted_9$1 = { class: "font-medium text-gray-900 dark:text-white" };
+const _hoisted_10$1 = { class: "text-xs text-gray-500 dark:text-gray-400 font-mono" };
+const _hoisted_11$1 = {
   key: 0,
   class: "w-2 h-2 bg-purple-500 rounded-full"
 };
-const _hoisted_9 = { class: "px-4 py-3 border-t border-gray-200 dark:border-gray-700 text-xs text-gray-500 dark:text-gray-400" };
-const _sfc_main = /* @__PURE__ */ defineComponent({
+const _hoisted_12$1 = {
+  key: 0,
+  class: "flex flex-col items-center justify-center py-8 text-gray-400"
+};
+const _hoisted_13$1 = { class: "px-4 py-3 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900" };
+const _hoisted_14$1 = { class: "flex items-center justify-between text-xs" };
+const _hoisted_15$1 = { class: "text-gray-500 dark:text-gray-400" };
+const _hoisted_16$1 = { class: "ml-1 text-purple-600 dark:text-purple-400" };
+const _hoisted_17$1 = {
+  key: 0,
+  class: "mt-3 pt-3 border-t border-gray-200 dark:border-gray-700"
+};
+const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "Menu.ce",
   setup(__props) {
     const selectedTimezone = /* @__PURE__ */ ref("Asia/Shanghai");
+    const customCity = /* @__PURE__ */ ref("");
+    const showCustomInput = /* @__PURE__ */ ref(false);
     const timezones = [
       { id: "Asia/Shanghai", name: "中国 (北京)", flag: "🇨🇳" },
       { id: "Asia/Tokyo", name: "日本 (东京)", flag: "🇯🇵" },
       { id: "Asia/Seoul", name: "韩国 (首尔)", flag: "🇰🇷" },
       { id: "America/New_York", name: "美国 (纽约)", flag: "🇺🇸" },
-      { id: "Europe/London", name: "英国 (伦敦)", flag: "🇬🇧" }
+      { id: "Europe/London", name: "英国 (伦敦)", flag: "🇬🇧" },
+      { id: "Europe/Paris", name: "法国 (巴黎)", flag: "🇫🇷" },
+      { id: "Australia/Sydney", name: "澳大利亚 (悉尼)", flag: "🇦🇺" }
     ];
+    const filteredTimezones = computed(() => {
+      if (!customCity.value) return timezones;
+      const search = customCity.value.toLowerCase();
+      return timezones.filter(
+        (tz) => tz.name.toLowerCase().includes(search) || tz.id.toLowerCase().includes(search)
+      );
+    });
+    const currentTimezoneName = computed(() => {
+      const tz = timezones.find((t) => t.id === selectedTimezone.value);
+      return tz ? tz.name : selectedTimezone.value;
+    });
     function selectTimezone(tz) {
       selectedTimezone.value = tz;
-      console.log("选择时区:", tz);
+      console.log("[Example Plugin] 选择时区:", tz);
+    }
+    function handleSearchInput(event) {
+      const target = event.target;
+      customCity.value = target.value;
+    }
+    function toggleCustomInput() {
+      showCustomInput.value = !showCustomInput.value;
+      if (!showCustomInput.value) {
+        customCity.value = "";
+      }
     }
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1, [
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "px-4 py-3 border-b border-gray-200 dark:border-gray-700" }, [
+      return openBlock(), createElementBlock("div", _hoisted_1$1, [
+        _cache[6] || (_cache[6] = createBaseVNode("div", { class: "px-4 py-3 border-b border-gray-200 dark:border-gray-700" }, [
           createBaseVNode("h3", { class: "font-bold text-gray-900 dark:text-white" }, "🕐 时钟设置"),
-          createBaseVNode("p", { class: "text-xs text-gray-500 dark:text-gray-400 mt-1" }, "选择您的时区")
+          createBaseVNode("p", { class: "text-xs text-gray-500 dark:text-gray-400 mt-1" }, "选择您的时区和显示偏好")
         ], -1)),
-        createBaseVNode("div", _hoisted_2, [
-          (openBlock(), createElementBlock(Fragment, null, renderList(timezones, (tz) => {
-            return createBaseVNode("div", {
+        createBaseVNode("div", _hoisted_2$1, [
+          createBaseVNode("div", _hoisted_3$1, [
+            createBaseVNode("input", {
+              type: "text",
+              placeholder: "搜索时区...",
+              value: customCity.value,
+              onInput: handleSearchInput,
+              class: "w-full px-3 py-2 pl-8 text-sm bg-gray-100 dark:bg-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            }, null, 40, _hoisted_4$1),
+            _cache[1] || (_cache[1] = createBaseVNode("span", { class: "absolute left-2.5 top-2.5 text-gray-400" }, "🔍", -1))
+          ])
+        ]),
+        createBaseVNode("div", _hoisted_5$1, [
+          (openBlock(true), createElementBlock(Fragment, null, renderList(filteredTimezones.value, (tz) => {
+            return openBlock(), createElementBlock("div", {
               key: tz.id,
               onClick: ($event) => selectTimezone(tz.id),
               class: normalizeClass(["flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors", selectedTimezone.value === tz.id ? "bg-purple-50 dark:bg-purple-900/20" : ""])
             }, [
-              createBaseVNode("span", _hoisted_4, toDisplayString(tz.flag), 1),
-              createBaseVNode("div", _hoisted_5, [
-                createBaseVNode("div", _hoisted_6, toDisplayString(tz.name), 1),
-                createBaseVNode("div", _hoisted_7, toDisplayString(tz.id), 1)
+              createBaseVNode("span", _hoisted_7$1, toDisplayString(tz.flag), 1),
+              createBaseVNode("div", _hoisted_8$1, [
+                createBaseVNode("div", _hoisted_9$1, toDisplayString(tz.name), 1),
+                createBaseVNode("div", _hoisted_10$1, toDisplayString(tz.id), 1)
               ]),
-              selectedTimezone.value === tz.id ? (openBlock(), createElementBlock("div", _hoisted_8)) : createCommentVNode("", true)
-            ], 10, _hoisted_3);
-          }), 64))
+              selectedTimezone.value === tz.id ? (openBlock(), createElementBlock("div", _hoisted_11$1)) : createCommentVNode("", true)
+            ], 10, _hoisted_6$1);
+          }), 128)),
+          filteredTimezones.value.length === 0 ? (openBlock(), createElementBlock("div", _hoisted_12$1, [..._cache[2] || (_cache[2] = [
+            createBaseVNode("span", { class: "text-3xl" }, "🌍", -1),
+            createBaseVNode("p", { class: "mt-2 text-sm" }, "未找到匹配的时区", -1)
+          ])])) : createCommentVNode("", true)
         ]),
-        createBaseVNode("div", _hoisted_9, " 当前选择: " + toDisplayString(selectedTimezone.value), 1)
+        createBaseVNode("div", _hoisted_13$1, [
+          createBaseVNode("div", _hoisted_14$1, [
+            createBaseVNode("div", _hoisted_15$1, [
+              _cache[3] || (_cache[3] = createBaseVNode("span", { class: "font-medium" }, "当前选择:", -1)),
+              createBaseVNode("span", _hoisted_16$1, toDisplayString(currentTimezoneName.value), 1)
+            ]),
+            createBaseVNode("button", {
+              onClick: toggleCustomInput,
+              class: "px-3 py-1 text-xs bg-purple-500 hover:bg-purple-600 text-white rounded-full transition-colors"
+            }, toDisplayString(showCustomInput.value ? "收起" : "自定义"), 1)
+          ]),
+          showCustomInput.value ? (openBlock(), createElementBlock("div", _hoisted_17$1, [
+            _cache[4] || (_cache[4] = createBaseVNode("label", { class: "block text-xs text-gray-500 dark:text-gray-400 mb-1.5" }, " 输入自定义时区 (IANA 格式) ", -1)),
+            withDirectives(createBaseVNode("input", {
+              "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedTimezone.value = $event),
+              type: "text",
+              placeholder: "例如: Asia/Hong_Kong",
+              class: "w-full px-3 py-2 text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            }, null, 512), [
+              [vModelText, selectedTimezone.value]
+            ]),
+            _cache[5] || (_cache[5] = createBaseVNode("p", { class: "mt-1.5 text-xs text-gray-400" }, [
+              createTextVNode(" 💡 提示: 访问 "),
+              createBaseVNode("a", {
+                href: "https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+                target: "_blank",
+                class: "text-purple-500 hover:underline"
+              }, "IANA Time Zone Database"),
+              createTextVNode(" 获取完整列表 ")
+            ], -1))
+          ])) : createCommentVNode("", true)
+        ])
+      ]);
+    };
+  }
+});
+const _hoisted_1 = { class: "w-full h-full flex flex-col bg-white dark:bg-gray-800 rounded-lg overflow-hidden" };
+const _hoisted_2 = { class: "flex-1 overflow-y-auto py-2" };
+const _hoisted_3 = { class: "px-4 py-3" };
+const _hoisted_4 = { class: "grid grid-cols-2 gap-2" };
+const _hoisted_5 = ["onClick"];
+const _hoisted_6 = { class: "font-medium" };
+const _hoisted_7 = { class: "text-xs text-gray-500 dark:text-gray-400 mt-0.5" };
+const _hoisted_8 = { class: "px-4 py-3 space-y-3" };
+const _hoisted_9 = { class: "flex items-center justify-between" };
+const _hoisted_10 = { class: "flex items-center justify-between" };
+const _hoisted_11 = { class: "px-4 py-3" };
+const _hoisted_12 = { class: "grid grid-cols-2 gap-2" };
+const _hoisted_13 = ["onClick"];
+const _hoisted_14 = { class: "text-lg" };
+const _hoisted_15 = { class: "text-gray-700 dark:text-gray-300" };
+const _hoisted_16 = { class: "px-4 py-3 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900" };
+const _hoisted_17 = { class: "flex items-center justify-between text-xs" };
+const _hoisted_18 = { class: "text-gray-500 dark:text-gray-400" };
+const _hoisted_19 = { class: "ml-1 text-purple-600 dark:text-purple-400" };
+const _hoisted_20 = { class: "text-gray-500 dark:text-gray-400" };
+const _hoisted_21 = { class: "ml-1 text-purple-600 dark:text-purple-400" };
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: "DisplaySettings.ce",
+  setup(__props) {
+    const clockFormat = /* @__PURE__ */ ref("24h");
+    const showSeconds = /* @__PURE__ */ ref(true);
+    const showDate = /* @__PURE__ */ ref(true);
+    const clockTheme = /* @__PURE__ */ ref("gradient");
+    const formatOptions = [
+      { id: "24h", name: "24小时制", desc: "14:30" },
+      { id: "12h", name: "12小时制", desc: "2:30 PM" }
+    ];
+    const themeOptions = [
+      { id: "gradient", name: "渐变", color: "from-purple-500 to-pink-500", preview: "🟪🟩" },
+      { id: "simple", name: "简约", color: "bg-gray-500", preview: "⬜" },
+      { id: "neon", name: "霓虹", color: "bg-cyan-500", preview: "🟦" },
+      { id: "warm", name: "暖色", color: "bg-orange-500", preview: "🟧" }
+    ];
+    const currentThemeName = computed(() => {
+      const theme = themeOptions.find((t) => t.id === clockTheme.value);
+      return theme ? theme.name : "渐变";
+    });
+    function updateClockFormat(format) {
+      clockFormat.value = format;
+      console.log("[Example Plugin] 时钟格式:", format);
+    }
+    function toggleSeconds() {
+      showSeconds.value = !showSeconds.value;
+      console.log("[Example Plugin] 显示秒数:", showSeconds.value);
+    }
+    function toggleDate() {
+      showDate.value = !showDate.value;
+      console.log("[Example Plugin] 显示日期:", showDate.value);
+    }
+    function selectTheme(theme) {
+      clockTheme.value = theme;
+      console.log("[Example Plugin] 选择主题:", theme);
+    }
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", _hoisted_1, [
+        _cache[7] || (_cache[7] = createBaseVNode("div", { class: "px-4 py-3 border-b border-gray-200 dark:border-gray-700" }, [
+          createBaseVNode("h3", { class: "font-bold text-gray-900 dark:text-white" }, "⚙️ 显示设置"),
+          createBaseVNode("p", { class: "text-xs text-gray-500 dark:text-gray-400 mt-1" }, "自定义时钟的显示效果")
+        ], -1)),
+        createBaseVNode("div", _hoisted_2, [
+          createBaseVNode("div", _hoisted_3, [
+            _cache[0] || (_cache[0] = createBaseVNode("label", { class: "text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 block" }, " 时间格式 ", -1)),
+            createBaseVNode("div", _hoisted_4, [
+              (openBlock(), createElementBlock(Fragment, null, renderList(formatOptions, (opt) => {
+                return createBaseVNode("button", {
+                  key: opt.id,
+                  onClick: ($event) => updateClockFormat(opt.id),
+                  class: normalizeClass(["px-3 py-2 text-sm rounded-lg border-2 transition-all text-left", clockFormat.value === opt.id ? "border-purple-500 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300" : "border-gray-200 dark:border-gray-600 hover:border-purple-300 text-gray-700 dark:text-gray-300"])
+                }, [
+                  createBaseVNode("div", _hoisted_6, toDisplayString(opt.name), 1),
+                  createBaseVNode("div", _hoisted_7, toDisplayString(opt.desc), 1)
+                ], 10, _hoisted_5);
+              }), 64))
+            ])
+          ]),
+          createBaseVNode("div", _hoisted_8, [
+            _cache[3] || (_cache[3] = createBaseVNode("label", { class: "text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 block" }, " 显示选项 ", -1)),
+            createBaseVNode("div", _hoisted_9, [
+              _cache[1] || (_cache[1] = createBaseVNode("div", null, [
+                createBaseVNode("div", { class: "text-sm text-gray-900 dark:text-white" }, "显示秒数"),
+                createBaseVNode("div", { class: "text-xs text-gray-500 dark:text-gray-400" }, "在时钟上显示秒钟")
+              ], -1)),
+              createBaseVNode("button", {
+                onClick: toggleSeconds,
+                class: normalizeClass(["relative w-12 h-6 rounded-full transition-colors", showSeconds.value ? "bg-purple-500" : "bg-gray-300 dark:bg-gray-600"])
+              }, [
+                createBaseVNode("span", {
+                  class: normalizeClass(["absolute top-1 w-4 h-4 bg-white rounded-full transition-transform", showSeconds.value ? "left-7" : "left-1"])
+                }, null, 2)
+              ], 2)
+            ]),
+            createBaseVNode("div", _hoisted_10, [
+              _cache[2] || (_cache[2] = createBaseVNode("div", null, [
+                createBaseVNode("div", { class: "text-sm text-gray-900 dark:text-white" }, "显示日期"),
+                createBaseVNode("div", { class: "text-xs text-gray-500 dark:text-gray-400" }, "在时钟下方显示日期")
+              ], -1)),
+              createBaseVNode("button", {
+                onClick: toggleDate,
+                class: normalizeClass(["relative w-12 h-6 rounded-full transition-colors", showDate.value ? "bg-purple-500" : "bg-gray-300 dark:bg-gray-600"])
+              }, [
+                createBaseVNode("span", {
+                  class: normalizeClass(["absolute top-1 w-4 h-4 bg-white rounded-full transition-transform", showDate.value ? "left-7" : "left-1"])
+                }, null, 2)
+              ], 2)
+            ])
+          ]),
+          createBaseVNode("div", _hoisted_11, [
+            _cache[4] || (_cache[4] = createBaseVNode("label", { class: "text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 block" }, " 配色主题 ", -1)),
+            createBaseVNode("div", _hoisted_12, [
+              (openBlock(), createElementBlock(Fragment, null, renderList(themeOptions, (opt) => {
+                return createBaseVNode("button", {
+                  key: opt.id,
+                  onClick: ($event) => selectTheme(opt.id),
+                  class: normalizeClass(["px-3 py-2 text-sm rounded-lg border-2 transition-all flex items-center gap-2", clockTheme.value === opt.id ? "border-purple-500 bg-purple-50 dark:bg-purple-900/20" : "border-gray-200 dark:border-gray-600 hover:border-purple-300"])
+                }, [
+                  createBaseVNode("span", _hoisted_14, toDisplayString(opt.preview), 1),
+                  createBaseVNode("span", _hoisted_15, toDisplayString(opt.name), 1)
+                ], 10, _hoisted_13);
+              }), 64))
+            ])
+          ])
+        ]),
+        createBaseVNode("div", _hoisted_16, [
+          createBaseVNode("div", _hoisted_17, [
+            createBaseVNode("div", _hoisted_18, [
+              _cache[5] || (_cache[5] = createBaseVNode("span", { class: "font-medium" }, "当前主题:", -1)),
+              createBaseVNode("span", _hoisted_19, toDisplayString(currentThemeName.value), 1)
+            ]),
+            createBaseVNode("div", _hoisted_20, [
+              _cache[6] || (_cache[6] = createBaseVNode("span", { class: "font-medium" }, "格式:", -1)),
+              createBaseVNode("span", _hoisted_21, toDisplayString(clockFormat.value === "24h" ? "24小时" : "12小时"), 1)
+            ])
+          ])
+        ])
       ]);
     };
   }
@@ -13346,23 +13576,28 @@ const main = defineIslandPlugin((ctx) => {
   const allPlugins = ctx.getAllPlugins();
   console.log("[Example Plugin] 所有插件:", allPlugins);
   ctx.registerRegular({
-    component: _sfc_main$4
+    component: _sfc_main$5
   });
   ctx.registerExpanded({
-    component: _sfc_main$3
+    component: _sfc_main$4
   });
   ctx.registerResident({
-    component: _sfc_main$2,
+    component: _sfc_main$3,
     colspan: 2,
     rowspan: 1
   });
   ctx.registerSettings({
-    component: _sfc_main$1
+    component: _sfc_main$2
   });
   ctx.registerMenu("timezone", {
-    component: _sfc_main,
+    component: _sfc_main$1,
     label: "时区设置",
     icon: "🌍"
+  });
+  ctx.registerMenu("display", {
+    component: _sfc_main,
+    label: "显示设置",
+    icon: "⚙️"
   });
   ctx.onMount(() => {
     console.log("[Example Plugin] 插件已挂载");
@@ -13385,4 +13620,4 @@ const main = defineIslandPlugin((ctx) => {
     console.log("[Example Plugin] 插件已卸载");
   });
 });
-module.exports = main;
+exports.default = main;

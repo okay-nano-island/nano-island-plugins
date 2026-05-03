@@ -47,6 +47,12 @@
         "label": "时区设置",
         "icon": "🌍",
         "entry": "menu"
+      },
+      {
+        "id": "display",
+        "label": "显示设置",
+        "icon": "⚙️",
+        "entry": "display"
       }
     ]
   }
