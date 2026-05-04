@@ -1,0 +1,101 @@
+{
+  "id": "nano-island-plugin-example",
+  "name": "示例笔记插件",
+  "version": "1.0.0",
+  "description": "基于 Webview 渲染的示例笔记插件，展示 MPA 架构和视图分组管理",
+  "author": "Nano Island Team",
+  "icon": "🚀",
+  "screenshots": [],
+  "isReleased": true,
+  "isOfficial": true,
+  "permissions": [
+    "storage:read",
+    "storage:write"
+  ],
+  "devPort": 5174,
+  "views": [
+    {
+      "name": "card",
+      "displayName": "常驻卡片",
+      "description": "显示最新笔记预览",
+      "icon": "📝",
+      "type": "card",
+      "entry": "card.html",
+      "devEntry": "src/views/card/index.html",
+      "colspan": 1,
+      "order": 1
+    },
+    {
+      "name": "pill",
+      "displayName": "灵动态",
+      "description": "显示笔记数量通知",
+      "icon": "🔔",
+      "type": "pill",
+      "entry": "pill.html",
+      "devEntry": "src/views/pill/index.html",
+      "width": 320,
+      "height": 40,
+      "order": 2
+    },
+    {
+      "name": "expanded",
+      "displayName": "展开态",
+      "description": "笔记列表和添加笔记功能",
+      "icon": "📋",
+      "type": "expanded",
+      "entry": "expanded.html",
+      "devEntry": "src/views/expanded/index.html",
+      "width": 320,
+      "height": 450,
+      "order": 3
+    },
+    {
+      "name": "modal-settings",
+      "displayName": "设置",
+      "description": "插件配置项",
+      "icon": "⚙️",
+      "type": "modal",
+      "entry": "modal-settings.html",
+      "devEntry": "src/views/modal-settings/index.html",
+      "width": 500,
+      "height": 600,
+      "order": 4
+    },
+    {
+      "name": "menu-list",
+      "displayName": "笔记管理",
+      "description": "查看和管理所有笔记",
+      "icon": "📚",
+      "type": "menu",
+      "entry": "menu-list.html",
+      "devEntry": "src/views/menu-list/index.html",
+      "width": 600,
+      "height": 500,
+      "order": 5
+    },
+    {
+      "name": "menu-trash",
+      "displayName": "回收站",
+      "description": "恢复或删除笔记",
+      "icon": "🗑️",
+      "type": "menu",
+      "entry": "menu-trash.html",
+      "devEntry": "src/views/menu-trash/index.html",
+      "width": 500,
+      "height": 400,
+      "order": 6
+    },
+    {
+      "name": "popup-note",
+      "displayName": "笔记详情弹窗",
+      "description": "弹窗显示笔记详情",
+      "icon": "📄",
+      "type": "popup",
+      "entry": "popup-note.html",
+      "devEntry": "src/views/popup-note/index.html",
+      "width": 400,
+      "height": 300,
+      "hidden": true
+    }
+  ]
+}
