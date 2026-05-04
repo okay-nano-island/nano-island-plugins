@@ -12,7 +12,10 @@
     "storage:read",
     "storage:write"
   ],
-  "devPort": 5174,
+  "devOptions": {
+    "isDevMode": true,
+    "port": 5174
+  },
   "island": {
     "resident": {
       "colspan": 1
