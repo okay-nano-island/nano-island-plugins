@@ -87,6 +87,16 @@
       "order": 5
     },
     {
+      "name": "menu-demo",
+      "displayName": "示例菜单",
+      "description": "一个示例菜单（只有html）",
+      "icon": "📚",
+      "type": "menu",
+      "entry": "views/menu-demo.html",
+      "devEntry": "src/views/menu-demo/index.html",
+      "order": 5
+    },
+    {
       "name": "menu-trash",
       "displayName": "回收站",
       "description": "恢复或删除笔记",
