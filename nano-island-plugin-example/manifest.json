@@ -1,7 +1,7 @@
 {
   "id": "nano-island-plugin-example",
   "name": "示例笔记插件",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "基于 Webview 渲染的示例笔记插件，展示 MPA 架构和视图分组管理",
   "author": "Nano Island Team",
   "icon": "🚀",
@@ -13,7 +13,7 @@
     "storage:write"
   ],
   "devOptions": {
-    "isDevMode": true,
+    "isDevMode": false,
     "port": 5174
   },
   "island": {
