@@ -1,7 +1,7 @@
 {
   "id": "nano-island-plugin-example",
   "name": "示例笔记插件",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "基于 Webview 渲染的示例笔记插件，展示 MPA 架构和视图分组管理",
   "author": "Nano Island Team",
   "icon": "🚀",
@@ -13,6 +13,15 @@
     "storage:write"
   ],
   "devPort": 5174,
+  "island": {
+    "resident": {
+      "colspan": 1
+    },
+    "expanded": {
+      "width": 320,
+      "height": 450
+    }
+  },
   "views": [
     {
       "name": "card",
@@ -22,7 +31,8 @@
       "type": "card",
       "entry": "card.html",
       "devEntry": "src/views/card/index.html",
-      "colspan": 1,
+      "width": 400,
+      "height": 40,
       "order": 1
     },
     {
@@ -95,6 +105,18 @@
       "devEntry": "src/views/popup-note/index.html",
       "width": 400,
       "height": 300,
+      "hidden": true
+    },
+    {
+      "name": "modal-note",
+      "displayName": "笔记编辑模态框",
+      "description": "模态框编辑笔记内容",
+      "icon": "✏️",
+      "type": "modal",
+      "entry": "modal-note.html",
+      "devEntry": "src/views/modal-note/index.html",
+      "width": 500,
+      "height": 400,
       "hidden": true
     }
   ]
