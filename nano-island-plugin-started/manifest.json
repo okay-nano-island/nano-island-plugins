@@ -22,115 +22,107 @@
     },
     "expanded": {
       "width": 320,
-      "height": 450
+      "height": 666
     }
   },
   "views": [
     {
-      "name": "card",
-      "displayName": "常驻卡片",
-      "description": "显示最新笔记预览",
-      "icon": "📝",
-      "type": "card",
-      "entry": "views/card.html",
-      "devEntry": "src/views/card/index.html",
-      "width": 400,
-      "height": 40,
-      "order": 1
-    },
-    {
-      "name": "pill",
-      "displayName": "灵动态",
-      "description": "显示笔记数量通知",
-      "icon": "🔔",
-      "type": "pill",
-      "entry": "views/pill.html",
-      "devEntry": "src/views/pill/index.html",
-      "width": 320,
-      "height": 40,
-      "order": 2
-    },
-    {
-      "name": "expanded",
-      "displayName": "展开态",
-      "description": "笔记列表和添加笔记功能",
+      "name": "modal-note",
+      "displayName": "添加笔记",
+      "description": "添加笔记",
       "icon": "📋",
-      "type": "expanded",
-      "entry": "views/expanded.html",
-      "devEntry": "src/views/expanded/index.html",
-      "width": 320,
-      "height": 450,
-      "order": 3
+      "type": "modal",
+      "order": 0,
+      "entry": "views/modal-note.html",
+      "devEntry": "src/views/modal-note/index.html"
     },
     {
       "name": "modal-settings",
       "displayName": "设置",
-      "description": "插件配置项",
-      "icon": "⚙️",
+      "description": "设置弹窗",
+      "icon": "📋",
       "type": "modal",
+      "order": 0,
       "entry": "views/modal-settings.html",
-      "devEntry": "src/views/modal-settings/index.html",
-      "width": 500,
-      "height": 600,
-      "order": 4
+      "devEntry": "src/views/modal-settings/index.html"
+    },
+    {
+      "name": "popup-quick-note",
+      "displayName": "快捷笔记",
+      "description": "新窗口添加笔记",
+      "icon": "📋",
+      "type": "popup",
+      "order": 0,
+      "entry": "views/popup-quick-note.html",
+      "devEntry": "src/views/popup-quick-note/index.html"
+    },
+    {
+      "name": "template",
+      "displayName": "模板",
+      "description": "这是一个模板",
+      "icon": "📝",
+      "type": "menu",
+      "width": 400,
+      "height": 40,
+      "order": 1,
+      "entry": "views/template.html",
+      "devEntry": "src/views/template/index.html"
     },
     {
       "name": "menu-list",
-      "displayName": "笔记管理",
-      "description": "查看和管理所有笔记",
-      "icon": "📚",
+      "displayName": "笔记列表",
+      "description": "显示笔记列表",
+      "icon": "📋",
       "type": "menu",
+      "order": 2,
       "entry": "views/menu-list.html",
-      "devEntry": "src/views/menu-list/index.html",
-      "width": 600,
-      "height": 500,
-      "order": 5
+      "devEntry": "src/views/menu-list/index.html"
     },
     {
-      "name": "menu-demo",
-      "displayName": "示例菜单",
-      "description": "一个示例菜单（只有html）",
-      "icon": "📚",
-      "type": "menu",
-      "entry": "views/menu-demo.html",
-      "devEntry": "src/views/menu-demo/index.html",
-      "order": 5
+      "name": "expanded",
+      "displayName": "展开态",
+      "description": "笔记列表和添加笔记功能 [通过插件更新]",
+      "icon": "📋",
+      "type": "expanded",
+      "width": 320,
+      "height": 450,
+      "order": 3,
+      "entry": "views/expanded.html",
+      "devEntry": "src/views/expanded/index.html"
     },
     {
       "name": "menu-trash",
       "displayName": "回收站",
-      "description": "恢复或删除笔记",
-      "icon": "🗑️",
+      "description": "显示已回收的笔记列表",
+      "icon": "📋",
       "type": "menu",
+      "width": 320,
+      "height": 450,
+      "order": 3,
       "entry": "views/menu-trash.html",
-      "devEntry": "src/views/menu-trash/index.html",
-      "width": 500,
-      "height": 400,
-      "order": 6
+      "devEntry": "src/views/menu-trash/index.html"
     },
     {
-      "name": "popup-note",
-      "displayName": "笔记详情弹窗",
-      "description": "弹窗显示笔记详情",
-      "icon": "📄",
-      "type": "popup",
-      "entry": "views/popup-note.html",
-      "devEntry": "src/views/popup-note/index.html",
+      "name": "pill",
+      "displayName": "灵动岛内容",
+      "description": "显示在灵动岛的内容",
+      "icon": "📋",
+      "type": "pill",
+      "order": 4,
+      "entry": "views/pill.html",
+      "devEntry": "src/views/pill/index.html"
+    },
+    {
+      "name": "card",
+      "displayName": "常驻卡片",
+      "description": "显示最新笔记预览 [运行时注入测试]",
+      "icon": "📝",
+      "type": "card",
       "width": 400,
-      "height": 300,
-      "hidden": true
-    },
-    {
-      "name": "modal-note",
-      "displayName": "笔记编辑模态框",
-      "description": "模态框编辑笔记内容",
-      "icon": "✏️",
-      "type": "modal",
-      "entry": "views/modal-note.html",
-      "devEntry": "src/views/modal-note/index.html",
-      "width": 500,
-      "height": 400,
-      "hidden": true
+      "height": 40,
+      "order": 6,
+      "entry": "views/card.html",
+      "devEntry": "src/views/card/index.html"
     }
   ]
 }
