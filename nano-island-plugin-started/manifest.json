@@ -27,39 +27,45 @@
   },
   "views": [
     {
-      "name": "modal-note",
-      "displayName": "添加笔记",
-      "description": "添加笔记",
-      "icon": "📋",
-      "type": "modal",
-      "order": 0,
-      "entry": "views/modal-note.html",
-      "devEntry": "src/views/modal-note/index.html"
-    },
-    {
       "name": "modal-settings",
-      "displayName": "设置",
-      "description": "设置弹窗",
+      "displayName": "设置弹窗",
+      "description": "这是一个灵动岛设置弹窗",
       "icon": "📋",
       "type": "modal",
       "order": 0,
       "entry": "views/modal-settings.html",
-      "devEntry": "src/views/modal-settings/index.html"
+      "devEntry": "src/views/modal-settings/index.html",
+      "width": 600,
+      "height": 750
     },
     {
-      "name": "popup-quick-note",
-      "displayName": "快捷笔记",
-      "description": "新窗口添加笔记",
+      "name": "modal-view",
+      "displayName": "弹窗1",
+      "description": "这是一个灵动岛弹窗1",
+      "icon": "📋",
+      "type": "modal",
+      "width": 600,
+      "height": 750,
+      "order": 0,
+      "entry": "views/modal-view.html",
+      "devEntry": "src/views/modal-view/index.html"
+    },
+    {
+      "name": "popup-quick-view",
+      "displayName": "新窗口面板",
+      "description": "这是一个灵动岛新窗口面板",
       "icon": "📋",
       "type": "popup",
+      "width": 1000,
+      "height": 750,
       "order": 0,
-      "entry": "views/popup-quick-note.html",
-      "devEntry": "src/views/popup-quick-note/index.html"
+      "entry": "views/popup-quick-view.html",
+      "devEntry": "src/views/popup-quick-view/index.html"
     },
     {
       "name": "template",
-      "displayName": "模板",
-      "description": "这是一个模板",
+      "displayName": "模板文件",
+      "description": "这是一个灵动岛模板文件",
       "icon": "material-symbols:extension",
       "type": "menu",
       "width": 400,
@@ -70,8 +76,8 @@
     },
     {
       "name": "menu-list",
-      "displayName": "笔记列表",
-      "description": "显示笔记列表",
+      "displayName": "菜单1",
+      "description": "这是一个灵动岛菜单1",
       "icon": "weui:note-filled",
       "type": "menu",
       "order": 2,
@@ -80,8 +86,8 @@
     },
     {
       "name": "expanded",
-      "displayName": "展开态",
-      "description": "笔记列表和添加笔记功能 [通过插件更新]",
+      "displayName": "展开面板",
+      "description": "这是一个灵动岛展开面版",
       "icon": "material-symbols:extension",
       "type": "expanded",
       "width": 320,
@@ -92,8 +98,8 @@
     },
     {
       "name": "menu-trash",
-      "displayName": "回收站",
-      "description": "显示已回收的笔记列表",
+      "displayName": "菜单2",
+      "description": "这是一个灵动岛菜单2",
       "icon": "material-symbols:extension",
       "type": "menu",
       "width": 320,
@@ -115,7 +121,7 @@
     {
       "name": "card",
       "displayName": "常驻卡片",
-      "description": "显示最新笔记预览 [运行时注入测试]",
+      "description": "这是一个灵动岛常驻卡片",
       "icon": "📝",
       "type": "card",
       "width": 400,
