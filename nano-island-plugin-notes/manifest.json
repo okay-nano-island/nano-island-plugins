@@ -12,10 +12,6 @@
     "storage:read",
     "storage:write"
   ],
-  "devOptions": {
-    "isDevMode": false,
-    "port": 5174
-  },
   "island": {
     "resident": {
       "colspan": 1
@@ -38,13 +34,14 @@
     },
     {
       "name": "modal-settings",
-      "displayName": "设置",
+      "displayName": "笔记设置",
       "description": "设置弹窗",
       "icon": "📋",
       "type": "modal",
       "order": 0,
       "entry": "views/modal-settings.html",
-      "devEntry": "src/views/modal-settings/index.html"
+      "devEntry": "src/views/modal-settings/index.html",
+      "height": 500
     },
     {
       "name": "popup-quick-note",

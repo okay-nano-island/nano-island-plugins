@@ -1,18 +1,17 @@
 {
   "id": "nano-island-plugin-started",
-  "name": "Nano Island 启动模板",
+  "name": "Nano Island 开发模板",
   "version": "1.0.0",
-  "description": "Nano Island 启动模板插件，展示 MPA 架构和视图分组管理",
+  "description": "Nano Island 开发模板插件，展示 MPA 架构和视图分组管理",
   "author": "Nano Island Team",
   "icon": "icon.png",
   "screenshots": [],
   "isReleased": true,
   "isOfficial": true,
-  "permissions": ["storage:read", "storage:write"],
-  "devOptions": {
-    "isDevMode": false,
-    "port": 5174
-  },
+  "permissions": [
+    "storage:read",
+    "storage:write"
+  ],
   "island": {
     "resident": {
       "colspan": 1
