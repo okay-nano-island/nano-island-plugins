@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>示例菜单</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/naive-ui"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="w-full h-screen overflow-y-auto flex flex-col gap-y-4 items-center justify-center bg-amber-100"
+        :class="[currentBgColor]"
+      >
+        <div class="text-black">{{ message }}</div>
+        <n-button type="primary" @click="handleClick"> 点击我试试 </n-button>
+      </div>
+    </div>
+
+    <script>
+      const { createApp, ref } = Vue
+      const App = {
+        setup() {
+          const message = ref('')
+          const bgColors = ['bg-green-100', 'bg-blue-100', 'bg-yellow-100', 'bg-amber-100']
+          const currentBgColor = ref(bgColors[0])
+          const handleClick = () => {
+            message.value = `点击了我 ${Date.now()}`
+            currentBgColor.value = bgColors[Math.floor(Math.random() * bgColors.length)]
+          }
+
+          return {
+            currentBgColor,
+            message,
+            handleClick,
+          }
+        },
+      }
+      const app = Vue.createApp(App)
+      app.use(naive)
+      app.mount('#app')
+    </script>
+  </body>
+</html>
