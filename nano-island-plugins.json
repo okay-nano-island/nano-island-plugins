@@ -1,24 +1,24 @@
 [
-    {
-        "id": "nano-island-plugin-started",
-        "name": "开发模板示例",
-        "version": "1.0.0",
-        "description": "一个完整的开发模板示例插件，展示所有组件类型和 TailwindCSS 支持",
-        "author": "Nano Island Team",
-        "icon": "🚀",
-        "screenshots": [],
-        "isReleased": true,
-        "isOfficial": true
-    },
-    {
-        "id": "nano-island-plugin-notes",
-        "name": "便签插件",
-        "version": "1.0.0",
-        "description": "一个简单的便签管理插件",
-        "author": "小莫唐尼",
-        "icon": "📝",
-        "screenshots": [],
-        "isReleased": false,
-        "isOfficial": false
-    }
+  {
+    "id": "nano-island-plugin-started",
+    "name": "开发模板示例",
+    "version": "1.0.0",
+    "description": "一个完整的开发模板示例插件，展示所有组件类型和 TailwindCSS 支持",
+    "author": "Nano Island Team",
+    "icon": "🚀",
+    "screenshots": [],
+    "isReleased": true,
+    "isOfficial": true
+  },
+  {
+    "id": "nano-island-plugin-notes",
+    "name": "便签插件",
+    "version": "1.0.0",
+    "description": "一个简单的便签管理插件",
+    "author": "小莫唐尼",
+    "icon": "📝",
+    "screenshots": [],
+    "isReleased": false,
+    "isOfficial": false
+  }
 ]
