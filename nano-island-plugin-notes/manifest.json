@@ -12,15 +12,6 @@
     "storage:read",
     "storage:write"
   ],
-  "island": {
-    "resident": {
-      "colspan": 1
-    },
-    "expanded": {
-      "width": 320,
-      "height": 666
-    }
-  },
   "views": [
     {
       "name": "modal-note",
@@ -55,7 +46,7 @@
     },
     {
       "name": "template",
-      "displayName": "模板",
+      "displayName": "模板文件",
       "description": "这是一个模板",
       "icon": "material-symbols:extension",
       "type": "menu",
@@ -105,6 +96,7 @@
       "type": "card",
       "width": 400,
       "height": 40,
+      "colspan": 1,
       "order": 6,
       "entry": "views/card.html",
       "devEntry": "src/views/card/index.html"
